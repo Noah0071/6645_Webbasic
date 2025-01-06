@@ -1,0 +1,51 @@
+header {
+  background-color: beige;
+  height: 300px;
+}
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  background-color: blue;
+}
+footer {
+  background-color: bisque;
+  height: 100px;
+}
+.logo-manu {
+  display: flex;
+  align-items: center;
+}
+.logo-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.manu ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 0 0 24px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.btn-r {
+  background-color: rgb(40, 168, 241);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn-l {
+  background-color: rgb(255, 255, 255);
+  color: rgb(40, 168, 241);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
