@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: url('images/bg_christmas.webp');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .left {
+            float: left;
+        }
+        .right {
+            float: right;
+        }
+        .center {
+            display: block;
+            margin: auto;
+        }
+        .b-image-contain {
+            background-color: rgb(235, 252, 233);
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: contain;
+        }
+        .b-image-fill {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: fill;
+        }
+        .b-image-cover {
+            width: 300px;
+            height: 100px;
+            border: 1px solid black;
+            object-fit: cover;
+        }
+        .s-image-contain {
+            background-color: rgb(255, 255, 255);
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: contain;
+        }
+        .s-image-fill {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: fill;
+        }
+        .s-image-cover {
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            object-fit: cover;
+        }   
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Favorite Animal</h1>
+  <img src="https://img.kapook.com/u/2021/Jarosphan/Home/Garden/180653/03.jpg" alt="image flower from website" width="300">
+  <p>This is an image of my favorite animal.</p>
+    <img src="images/rabbit3.jpg" alt="rabbit" width="300"> 
+    <p>รูปภาพนี้เอามาจากเครื่อง</p>
+  <hr>
+
+  <h1>Click the Image : Link for Open new window</h1>
+  <a href="https://youtube.com/shorts/SXHMnicI6Pg?si=vE1Q-spppIsLBDW5" target="_blank">
+    <img src="https://louisville.edu/anthropology/images/click-me/image" alt="A clickable image">
+  </a>
+
+  <hr>
+
+  <h1>Image Alignment</h1>
+  <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjN1nLgPMgyDw406jua1-pAUdwpuceP8zP_g&s" alt="Left aligned image" class="left">This image is aligned to the left.</p>
+  <p><img src="https://www.lookbook.in.th/wp-content/uploads/2015/01/649cf99ea69eded2bfffc7346cafc588-150x150.jpg" alt="Right aligned image" class="right">This image is aligned to the right.</p>
+  <p><img src="https://upload.wikimedia.org/wikipedia/th/f/f2/Popeye_popeye.jpg" alt="Center aligned image" class="center" width="150 ">This image is centered.</p>
+
+  <hr>
+
+  <h1>Object-Fit: Image Bigger than Container (300x100)</h1>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+    <br>
+  </div>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+    <br>
+  </div>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+    <br>
+  </div>
+
+
+  <hr>
+
+  <h1>Object-Fit: Image Smaller than Container</h1>
+  <div>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f4bd7a6-f763-4518-9b81-bdfd40ce3fc9/d26yedh-7321e3e3-0846-4b77-b418-a30348f982f3.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmNGJkN2E2LWY3NjMtNDUxOC05YjgxLWJkZmQ0MGNlM2ZjOVwvZDI2eWVkaC03MzIxZTNlMy0wODQ2LTRiNzctYjQxOC1hMzAzNDhmOTgyZjMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nvmUh7ZUbQgHUITE1Dhs97KzGb_gD2BjLiOiq73oMLY" alt="Sample Image" class="s-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+  </div>
+
+  <div>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f4bd7a6-f763-4518-9b81-bdfd40ce3fc9/d27o815-7aeda6bb-34bd-4dcd-ada6-c6e27fbade16.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmNGJkN2E2LWY3NjMtNDUxOC05YjgxLWJkZmQ0MGNlM2ZjOVwvZDI3bzgxNS03YWVkYTZiYi0zNGJkLTRkY2QtYWRhNi1jNmUyN2ZiYWRlMTYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.lavjAxx0egYbhZ7Bdzb2aWtfcAp5dPYotjktC0bLF0M" alt="Sample Image" class="s-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+  </div>
+
+  <div>
+    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5f4bd7a6-f763-4518-9b81-bdfd40ce3fc9/d26yf2h-e858f532-4b44-4584-a255-fdedf789cb0b.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzVmNGJkN2E2LWY3NjMtNDUxOC05YjgxLWJkZmQ0MGNlM2ZjOVwvZDI2eWYyaC1lODU4ZjUzMi00YjQ0LTQ1ODQtYTI1NS1mZGVkZjc4OWNiMGIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.ZzXpoMDLZrRAgEjqk0TVOV8RMiA_MBx5xhq99fdUZUg" alt="Sample Image" class="s-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+  </div>
+
+
+  <hr>
+
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://static.displate.com/270x380/displate/2023-10-23/432fe3a0e00b53ea8ae1b69515ec9d4d_2e4a29dabfa226c51cf124fbff6f8605.jpg" alt="Image 1" height="100">
+    <img src="https://media.tenor.com/_zWYqfZdneIAAAAM/shocked-face-shocked-meme.gif" alt="Image 2" height=" 50">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwNa87VcWP9J9lqq8TmX77WT2SpNWhUKTH1w&s" alt="Image 3" height="150">
+    <img src="https://preview.redd.it/what-is-the-name-of-this-meme-face-thing-v0-ko4jj3d27rja1.png?auto=webp&s=d5d4d1b1317cd325f82991d020bdda7a400f6c1c" alt="Image 4" height="30">
+  </div>
+
+  <hr>
+
+
+  <h1>FlexBox: </h1>
+  <div class="ex-flex">
+    <img src="images/flex.jpg" alt="Image 1">
+    <br>
+  </div>
+
+  <hr>
+  <h1>FlexBox: justify-content</h1>
+  <div class="ex-flex">
+    <img src="images/justify-content.jpg" alt="Image 1">
+    <br>
+  </div>
+  
+  <hr>
+
+
+  <div class="back-to-home">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>
