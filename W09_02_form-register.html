@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Information</title>
     <style>
         body {
             font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-            margin: auto;
-            padding: 20px;
-            background-color: rgb(216, 216, 216);
-        }
-        form {
+            margin: 0;
+            padding: 0;
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            min-height: 100vh;
+            background-color: rgb(216, 216, 216);
         }
         .container {
             max-width: 600px;
             background-color: aliceblue;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px ;
+            box-shadow: 0 4px 10px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
         h1 {
             text-align: center;
@@ -44,41 +48,59 @@
         button:hover {
             background-color: rgb(2, 2, 105);
         }
+        footer {
+            margin-top: auto;
+            text-align: left;
+            padding: 10px;
+            background-color: rgb(200, 200, 200);
+        }
+        footer a {
+            color: blue;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <H1>Personal Information</H1>
+        <h1>Personal Information</h1>
         <form action="">
             <label for="name">Name</label>
-            <input type="text" id="name" name="name">
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="dob">Date of Birth</label>
-        <input type="date">
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
 
-        <label for="gender">Gender</label>
-        <select name="province" id="gender">
-            <option value="">-- Select Gender --</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-        </select>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="">-- Select Gender --</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
 
-        <label for="hobbies">Hobbies</label>
-        <textarea name="address" id="hobbies" cols="50" rows="5"></textarea>
+            <label for="hobbies">Hobbies</label>
+            <textarea name="hobbies" id="hobbies" cols="50" rows="5" placeholder="List your hobbies here..."></textarea>
 
-        <label for="con">County</label>
-        <select name="province" id="con">
-            <option value="">-- Select County --</option>
-            <option value="Thailand">Thailand</option>
-            <option value="Japan">Japan</option>
-            <option value="Usa">Usa</option>
-        </select>
-        <button>ส่ง</button>
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+                <option value="">-- Select Country --</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Japan">Japan</option>
+                <option value="USA">USA</option>
+                <option value="Clambodia">Clambodia</option>
+            </select>
+            <button type="submit">ส่ง</button>
         </form>
     </div>
+    <footer>
+        <a href="index.html">Back to Home</a>
+    </footer>
 </body>
 </html>
