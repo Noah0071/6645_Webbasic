@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Charm:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        font-family: Caveat,Charm,sans-serif;
+        font-weight: bold;
+
+        background: rgb(241,75,255);
+        background: linear-gradient(90deg, rgba(241,75,255,1) 0%, rgba(254,254,254,1) 100%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container {
+        background-color: rgb(255, 238, 254);
+        width: 750px;
+        display: flex;
+        justify-content: center;
+        border-radius: 12px;
+        overflow: hidden;
+
+    .left-side {
+            width: 60%;
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20220609/pngtree-gradient-holograms-cute-bg-image_1412610.jpg);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: darken;
+
+            margin: 0%;
+            padding: 24px;
+            text-align: center;text-transform: uppercase;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+    }
+    .right-side {
+        width: 40%;
+        padding: 48px;
+    form {
+        label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 4px;
+            margin-bottom: 4px;
+            
+        }
+    button {
+        width: 100%;
+        background-color: rgb(255, 0, 242);
+        color: white;
+        cursor: pointer;
+        margin-top: 12px;
+        padding:5px;
+        border: none;
+        }
+    }   
+    }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>Information Technology</h1>
+            <p>ยินดีต้อนรับเข้าสู่เว็บไซต์การเรีนนการสอนและพัฒนาเว็บไวต์</p>
+        </div>
+        <div class="right-side">
+            <h2>Login</h2>
+            <form action="" method="">
+                <label for="">Username :</label>
+                <input type="text" name="username" id="username" required>
+                <label for="">Password :</label>
+                <input type="password" name="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p><a href="#">Forgot password?</a></p>
+            <p>Don't have an account? <a href="#">Register</a></p>
+        </div>
+    </div>
+</body>
+</html>
