@@ -1,18 +1,43 @@
+body {
+  background-color: rgb(214, 255, 253);
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
 header {
-  background-color: beige;
-  height: 300px;
+  margin: 0px 40px;
+  padding: 0px;
 }
 nav {
-  background-color: white;
+  background-color: rgb(214, 255, 253);
   display: flex;
   justify-content: space-between;
 }
 .container {
-  background-color: blue;
+  width: 75%;
+  margin: auto;
+}
+.card {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 40px;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
 }
 footer {
-  background-color: bisque;
+  background-color: rgb(66, 148, 255);
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 0px;
+  margin-top: 40px;
+  p {
+    color: white;
+  }
 }
 .logo-manu {
   display: flex;
@@ -36,11 +61,16 @@ footer {
   gap: 10px;
 }
 .btn-r {
-  background-color: rgb(40, 168, 241);
+  background-color: rgb(39, 162, 233);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  border: 1px;
+}
+.btn-r:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(40, 168, 241);
 }
 .btn-l {
   background-color: rgb(255, 255, 255);
@@ -48,4 +78,18 @@ footer {
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
+  border: 1px;
+}
+.btn-l:hover {
+  background-color: rgb(40, 168, 241);
+  color: white;
+}
+.manu ul li a {
+  text-decoration: none;
+  color: rgb(40, 168, 241);
+  font-size: 1rem;
+}
+.manu ul li a:hover {
+  text-decoration: none;
+  color: rgb(243, 0, 0);
 }
