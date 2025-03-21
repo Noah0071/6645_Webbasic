@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <style>
         :root {
-            --primary-color: rgb(136, 27, 167);
-            --secondary-color: rgb(184, 41, 72);
-            --secondary2-color: rgb(250, 198, 122);
-            --background-color: rgb(249, 230, 207);
+            --primary-color: rgb(44, 62, 80);
+            --secondary-color: rgb(52, 73, 94);
+            --secondary2-color: rgb(52, 152, 219);
+            --background-color: rgb(236, 240, 241);
             --text-color-normal: #000;
             --box-shadow: 0px 2px 10px #00000056;
             --base-white-color: #fff;
@@ -117,7 +117,7 @@
         .menu-box ul li a:hover {
             transform: translateX(5px);
             transition: 0.3s;
-            color: var(--primary-color); 
+            color: var(--secondary2-color); 
             font-weight: bold;
         }
         .container-fluid {
@@ -127,7 +127,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('images/bg1.webp'); 
+            background-image: url('images/bg-new.webp'); 
             background-size: cover; 
             background-position: center; 
             transition: margin-left 0.3s ease, width 0.3s ease;
@@ -140,7 +140,7 @@
         }
 
         .home h1 {
-            color: var(--secondary-color);
+            color: var(--base-white-color);
             text-shadow: 3px 0px 5px rgb(0, 0, 0);
             text-align: center;
             white-space: nowrap;
@@ -175,7 +175,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('images/bg1.webp'); 
+            background-image: url('images/bg-new.webp'); 
             background-size: cover; 
             background-position: center; 
             transition: margin-left 0.3s ease, width 0.3s ease;
@@ -235,6 +235,7 @@
         }
 
         .profile h1:hover {
+            color: var(--secondary2-color);
             transform: scale(1.2);
         }
 
@@ -267,7 +268,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('images/bg1.webp'); 
+            background-image: url('images/bg-new.webp'); 
             background-size: cover; 
             background-position: center; 
             transition: margin-left 0.3s ease, width 0.3s ease;
@@ -291,13 +292,14 @@
         }
 
         .about_me h1 {
-            color: var(--base-white-color);
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            font-weight: bolder;
+            color: var(--text-color-normal);
+            text-shadow: 3px 0px 5px rgb(250, 250, 250);
         }
 
         .about_me p {
-            color: var(--base-white-color);
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            color: var(--text-color-normal);
+            text-shadow: 3px 0px 5px rgb(255, 255, 255);
             line-height: 30px;
         }
 
@@ -309,7 +311,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('images/bg1.webp'); 
+            background-image: url('images/bg-new.webp'); 
             background-size: cover; 
             background-position: center; 
             transition: margin-left 0.3s ease, width 0.3s ease;
@@ -317,17 +319,18 @@
         }
 
         .information h1{
-            color: var(--base-white-color);
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            color: var(--text-color-normal);
+            text-shadow: 3px 0px 5px rgb(252, 252, 252);
+            font-weight: bolder;
             font-size: 2rem;
         }
         .information ul li {
             text-decoration: none;
-            color: white;
+            color: rgb(0, 0, 0);
             font-size: 18px;
             display: block;
             line-height: 30px;
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            text-shadow: 3px 0px 5px rgb(255, 255, 255);
         }
 
         .container-fluid5 {
@@ -339,7 +342,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('images/bg1.webp'); 
+            background-image: url('images/bg-new.webp'); 
             background-size: cover; 
             background-position: center; 
             transition: margin-left 0.3s ease, width 0.3s ease;
@@ -358,25 +361,26 @@
         }
 
         .education h1 {
-            color: var(--base-white-color);
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            color: var(--text-color-normal);
+            text-shadow: 3px 0px 5px rgb(255, 255, 255);
+            font-weight: bolder;
         }
 
         .education h4 {
-            color: var(--base-white-color);
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            color: var(--text-color-normal);
+            text-shadow: 3px 0px 5px rgb(255, 255, 255);
         }
 
         .education p {
-            color: var(--base-white-color);
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            color: var(--text-color-normal);
+            text-shadow: 3px 0px 5px rgb(255, 255, 255);
         }
 
         .hr_a {
             width: 60%;
             margin-left: 0;
             display: block;
-            border: 1px solid white
+            border: 1px solid var(--primary-color);
         }
 
         .grad {
@@ -427,7 +431,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url('images/bg1.webp'); 
+            background-image: url('images/bg-new.webp'); 
             background-size: cover; 
             background-position: center; 
             transition: margin-left 0.3s ease, width 0.3s ease;
@@ -435,18 +439,18 @@
         }
 
         .skill h1 {
-            color: var(--base-white-color);
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            color: var(--text-color-normal);
+            text-shadow: 3px 0px 5px rgb(255, 255, 255);
         }
 
         
         .skill ul li {
             text-decoration: none;
-            color: white;
+            color: rgb(0, 0, 0);
             font-size: 18px;
             display: block;
             line-height: 30px;
-            text-shadow: 3px 0px 5px rgb(0, 0, 0);
+            text-shadow: 3px 0px 5px rgb(255, 255, 255);
         }
 
         @media (max-width: 768px) {
@@ -593,7 +597,7 @@
     }
 
     .mobile-menu ul li a:hover {
-        color: var(--primary-color);
+        color: var(--secondary2-color);
         transform: translateX(5px);
         transition: 0.3s;
     }
